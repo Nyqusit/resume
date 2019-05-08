@@ -1,0 +1,32 @@
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <span class="w3-bar-item">World</span>
+  <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+<style type="text/css" media="all">
+    #messages{
+        text-align: center;
+    } 
+</style>
+</header>
+  <div class="w3-main w3-white" style="margin-left:260px">
+    <form form class="form-signin" action="/world/message/" method="POST" style="width:80%; margin:auto">
+      <hr style="visibility: hidden">
+      <div class="text-center mb-4">
+        <img class="mb-4" src="/docs/4.2/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Send a message to somebody else connected to this URL</h1>
+        <p class="mt-5 mb-3 text-muted text-center">send a message to create a connection</p>
+        <p class="mt-5 mb-3 text-muted text-center"></p>
+
+      </div>
+
+      <div class="form-label-group">
+        <input name="message" class="form-control" placeholder="message" required autofocus>
+        <label for="inputEmail"> </label>
+      </div>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">send</button>
+      <br>
+
+    </form>
+    <h1 class="h3 mb-3 font-weight-normal" id="messages"></h1>
+    <script src="js/main.js"></script>
+  </div>
